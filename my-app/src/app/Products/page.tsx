@@ -2,12 +2,6 @@ import React from "react";
 import Sidebar from "../components/sidebar";
 import HomeSectionTwo from "../components/homeTwo";
 import Image from "next/image";
-import view1 from "../../../public/images/details page/View.png";
-import view2 from "../../../public/images/details page/View 1.png";
-import view3 from "../../../public/images/details page/View 2.png";
-import view4 from "../../../public/images/details page/View 3.png";
-import pfp1 from "../../../public/images/avatars/Profill.png";
-import pfp2 from "../../../public/images/avatars/Profill-1.png";
 
 export default function ProductDetails() {
   const data = [
@@ -16,14 +10,14 @@ export default function ProductDetails() {
       position: "Ceo at Bukalapak",
       description:
         "We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.",
-      pfp: pfp1,
+      pfp: "/avatars/ProfileOne.png",
     },
     {
       name: "Skylar Dias",
       position: "Ceo at Amazon",
       description:
         "We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.",
-      pfp: pfp2,
+      pfp: "/avatars/ProfileTwo.png",
     },
   ];
 
@@ -34,17 +28,17 @@ export default function ProductDetails() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
           <div className="flex flex-col gap-5">
             <div>
-              <Image src={view1} alt="" />
+              <Image src={"/details page/Products (4).png"} width={500} height={500} alt="" />
             </div>
             <div className="flex justify-between gap-2">
               <div>
-                <Image src={view2} alt="" width={150} />
+                <Image src={"/details page/Products (2).png"} alt="" width={150} height={150} />
               </div>
               <div>
-                <Image src={view3} alt="" width={150} />
+                <Image src={"/details page/Products (3).png"} alt="" width={150} height={150} />
               </div>
               <div>
-                <Image src={view4} alt="" width={150} />
+                <Image src={"/details page/Products (1).png"} alt="" width={150} height={150} />
               </div>
             </div>
           </div>
@@ -64,7 +58,7 @@ export default function ProductDetails() {
               </div>
               <div className="flex gap-2">
                 <svg
-                  className="w-2 fill-yellow-400"
+                  className="w-5 fill-yellow-400"
                   viewBox="0 0 14 13"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +66,7 @@ export default function ProductDetails() {
                   <path d="M7 0L9.4687 3.60213L13.6574 4.83688L10.9944 8.29787L11.1145 12.6631L7 11.2L2.8855 12.6631L3.00556 8.29787L0.342604 4.83688L4.5313 3.60213L7 0Z" />
                 </svg>
                 <svg
-                  className="w-2 fill-yellow-400"
+                  className="w-5 fill-yellow-400"
                   viewBox="0 0 14 13"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -157,8 +151,10 @@ export default function ProductDetails() {
               <div key={index} className="flex gap-2">
                 <Image
                   src={person.pfp}
-                  className="w-14 h-14 rounded-full mx-auto"
+                  className="w-14 h-14 rounded-full mx-auto object-contain"
                   alt=""
+                  height={14}
+                  width={14}
                 />
                 <div className="flex flex-col gap-4">
                   <div className="flex justify-between items-center">

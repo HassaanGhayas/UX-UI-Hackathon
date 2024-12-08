@@ -5,7 +5,7 @@ const cardData = [
   {
     carName: "Koenigsegg",
     carType: "Sport",
-    carImg: "/images/cards/car.png", // Update to URL path
+    carImg: "/cards/Car (1).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -13,7 +13,7 @@ const cardData = [
   {
     carName: "Nissan GT - R",
     carType: "Sport",
-    carImg: "/images/cards/Car1.png", // Update to URL path
+    carImg: "/cards/Car (2).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "4",
     carPrice: "$99.9",
@@ -21,7 +21,7 @@ const cardData = [
   {
     carName: "Cr - V",
     carType: "Sport",
-    carImg: "/images/cards/Car-3.png", // Update to URL path
+    carImg: "/cards/Car (3).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -29,7 +29,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-4.png", // Update to URL path
+    carImg: "/cards/Car (4).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -37,7 +37,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-5.png", // Update to URL path
+    carImg: "/cards/Car (5).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -45,7 +45,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-6.png", // Update to URL path
+    carImg: "/cards/Car (6).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -53,7 +53,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-7.png", // Update to URL path
+    carImg: "/cards/Car (7).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -61,7 +61,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-8.png", // Update to URL path
+    carImg: "/cards/Car (8).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -69,7 +69,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-9.png", // Update to URL path
+    carImg: "/cards/Car (1).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -77,7 +77,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car1.png", // Update to URL path
+    carImg: "/cards/Car (2).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -85,7 +85,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: "/images/cards/Car-5.png", // Update to URL path
+    carImg: "/cards/Car (3).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -93,7 +93,7 @@ const cardData = [
   {
     carName: "Nissan GTR",
     carType: "Sport",
-    carImg: "/images/cards/car.png", // Update to URL path
+    carImg: "/cards/Car (4).png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",

@@ -1,14 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import heroCar01 from "../../../public/images/hero/herocar.png";
-import heroCar02 from "../../../public/images/hero/herocar2.png";
 export default function HomeHeroSection() {
   const heroSecs = [
     {
       title: "The Best Platform for Car Rental",
       description:
         "Ease of doing a car rental safely and reliably. Of course at a low price.",
-      imageUrl: heroCar01,
+      imageUrl: "/hero/HeroCar (1).png",
       bgColor: "bg-sky-400",
       additionalSettings: "flex",
     },
@@ -16,7 +14,7 @@ export default function HomeHeroSection() {
       title: "Easy way to rent a car at a low price",
       description:
         "Providing cheap car rental services and safe and comfortable facilities.",
-      imageUrl: heroCar02,
+      imageUrl: "/hero/HeroCar (2).png",
       bgColor: "bg-blue-500",
       additionalSettings: "md:flex hidden",
     },
@@ -48,17 +46,20 @@ export default function HomeHeroSection() {
               <path d="M440-120v-240h80v80h320v80H520v80h-80Zm-320-80v-80h240v80H120Zm160-160v-80H120v-80h160v-80h80v240h-80Zm160-80v-80h400v80H440Zm160-160v-240h80v80h160v80H680v80h-80Zm-480-80v-80h400v80H120Z" />
             </svg>
           </div>
-      <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 relative max-w-screen-xl m-auto">
-        {heroSecs.map((hero) => {
+      <div key={2} className="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5 relative max-w-screen-xl m-auto">
+        {heroSecs.map((hero, index) => {
           return (
             <>
               <div
+                key={index}
                 className={`p-8 ${hero.bgColor} min-h-[300px] rounded-xl ${hero.additionalSettings} flex-col relative z-[2] overflow-hidden`}
               >
                 <Image
                   src={hero.imageUrl}
                   alt=""
                   className="absolute bottom-0 pb-2 right-2"
+                  width={300}
+                  height={300}
                 />
                 <div className="max-w-[250px] flex flex-col gap-5 relative z-10 text-white">
                   <div className="flex flex-col gap-5 text-white">

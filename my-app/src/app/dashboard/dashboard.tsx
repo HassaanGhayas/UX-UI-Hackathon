@@ -1,12 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import map from "../../../public/images/dashboard/Maps.png";
-import chart from "../../../public/images/dashboard/Chart.png";
-import billimg from "../../../public/images/details page/View 1.png";
-import img1 from "../../../public/images/cards/car.png";
-import img2 from "../../../public/images/cards/Car1.png";
-import img3 from "../../../public/images/cards/Car-2.png";
-import img4 from "../../../public/images/cards/Car-3.png";
 import Link from "next/link";
 
 export default function Dashboard() {
@@ -79,7 +72,7 @@ export default function Dashboard() {
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                     >
@@ -105,7 +98,7 @@ export default function Dashboard() {
                       <span className="overflow-hidden text-ellipsis whitespace-nowrap">
                         Car Rent
                       </span>
-                    </a>
+                    </Link>
                     <ul className="sub menu max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out ml-8">
                       <li>
                         <a
@@ -116,12 +109,12 @@ export default function Dashboard() {
                         </a>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-gray-800 text-sm block cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2 transition-all duration-300"
                         >
                           <span>Article</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <a
@@ -135,7 +128,7 @@ export default function Dashboard() {
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                     >
@@ -159,7 +152,7 @@ export default function Dashboard() {
                       <span className="overflow-hidden text-ellipsis whitespace-nowrap">
                         Insight
                       </span>
-                    </a>
+                    </Link>
                     <ul className="sub menu max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out ml-8">
                       <li>
                         <a
@@ -170,18 +163,18 @@ export default function Dashboard() {
                         </a>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-gray-800 text-sm block cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2 transition-all duration-300"
                         >
                           <span>Time</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                     >
@@ -199,7 +192,7 @@ export default function Dashboard() {
                       <span className="overflow-hidden text-ellipsis whitespace-nowrap">
                         Inbox
                       </span>
-                    </a>
+                    </Link>
                     <ul className="sub menu max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out ml-8">
                       <li>
                         <a
@@ -218,18 +211,18 @@ export default function Dashboard() {
                         </a>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-gray-800 text-sm block cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2 transition-all duration-300"
                         >
                           <span>Visitors</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                     >
@@ -257,23 +250,23 @@ export default function Dashboard() {
                       <span className="overflow-hidden text-ellipsis whitespace-nowrap">
                         Calender
                       </span>
-                    </a>
+                    </Link>
                     <ul className="sub menu max-h-0 overflow-hidden transition-[max-height] duration-500 ease-in-out ml-8">
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-gray-800 text-sm block cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2 transition-all duration-300"
                         >
                           <span>Profile</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="#"
                           className="text-gray-800 text-sm block cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2 transition-all duration-300"
                         >
                           <span>Logout</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -285,7 +278,7 @@ export default function Dashboard() {
                   </h6>
                   <ul className="mt-3 space-y-2">
                     <li>
-                      <a
+                      <Link
                         href="#"
                         className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                       >
@@ -305,10 +298,10 @@ export default function Dashboard() {
                           />
                         </svg>
                         <span>Settings</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
                         className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                       >
@@ -325,10 +318,10 @@ export default function Dashboard() {
                           />
                         </svg>
                         <span>Help & Center</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
                         className="text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                       >
@@ -354,10 +347,10 @@ export default function Dashboard() {
                           </g>
                         </svg>
                         <span>Dark Mode</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="#"
                         className="mt-12 text-gray-800 text-sm flex items-center cursor-pointer hover:bg-gray-100 rounded-md px-3 py-2.5 transition-all duration-300"
                       >
@@ -375,7 +368,7 @@ export default function Dashboard() {
                           />
                         </svg>
                         <span>Logout</span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -405,11 +398,21 @@ export default function Dashboard() {
             <div className="p-5 bg-white flex flex-col gap-5 w-full">
               <span className="font-bold">Details Rental</span>
               <div>
-                <Image src={map} alt="" />
+                <Image
+                  src={"/dashboard/dashboard (1).png"}
+                  alt=""
+                  height={300}
+                  width={300}
+                />
               </div>
               <div className="flex gap-2">
                 {" "}
-                <Image src={billimg} alt="" width={150} />{" "}
+                <Image
+                  src={"images/details page/View 1.png"}
+                  alt=""
+                  width={150}
+                  height={150}
+                />{" "}
                 <div className="flex flex-col gap-2 w-full">
                   {" "}
                   <div className="flex w-full justify-between">
@@ -560,7 +563,12 @@ export default function Dashboard() {
             <div className="p-5 bg-white flex flex-col gap-5 relative justify-between w-full h-full">
               <span className="font-bold">Top 5 Car Rental</span>
               <div className="flex gap-5">
-                <Image src={chart} alt="" height={250} />
+                <Image
+                  src={"/dashboard/dashboard (2).png"}
+                  alt=""
+                  height={300}
+                  width={300}
+                />
                 <div className="flex flex-col justify-between w-full">
                   <div className="flex justify-between w-full ">
                     <div className="inline-flex items-center gap-2">
@@ -602,7 +610,7 @@ export default function Dashboard() {
               <div className="flex gap-2">
                 {" "}
                 <Image
-                  src={img1}
+                  src={"/cards/Car (1).png"}
                   alt=""
                   width={150}
                   className="object-contain"
@@ -621,7 +629,7 @@ export default function Dashboard() {
               <div className="flex gap-2">
                 {" "}
                 <Image
-                  src={img2}
+                  src={"/cards/Car (2).png"}
                   alt=""
                   width={150}
                   className="object-contain"
@@ -640,7 +648,7 @@ export default function Dashboard() {
               <div className="flex gap-2">
                 {" "}
                 <Image
-                  src={img3}
+                  src={"/cards/Car (3).png"}
                   alt=""
                   width={150}
                   className="object-contain"
@@ -659,7 +667,7 @@ export default function Dashboard() {
               <div className="flex gap-2">
                 {" "}
                 <Image
-                  src={img4}
+                  src={"/cards/Car (4).png"}
                   alt=""
                   width={150}
                   className="object-contain"

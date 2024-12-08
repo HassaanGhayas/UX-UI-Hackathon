@@ -1,9 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import billimg from "../../../public/images/details page/View 1.png";
-import Visa from "../../../public/images/Payment Methods/Visa.png";
-import Paypal from "../../../public/images/Payment Methods/PayPal.png";
-import Bitcoin from "../../../public/images/Payment Methods/Bitcoin.png";
 
 export default function Checkout() {
   return (
@@ -23,7 +19,11 @@ export default function Checkout() {
             </div>{" "}
             <div className="flex gap-2">
               {" "}
-              <Image src={billimg} alt="" width={100} />{" "}
+              <Image
+                src={"/details page/Products (1).png"}
+                alt=""
+                width={100}
+              />{" "}
               <div className="flex flex-col gap-2">
                 {" "}
                 <span className="sm:text-2xl text-xl font-bold">
@@ -280,7 +280,7 @@ export default function Checkout() {
                     </svg>
                     <span>Credit Card</span>
                   </div>
-                  <Image src={Visa} alt="Visa" />
+                  <Image src={"/details page/Visa.png"} alt="Visa" />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-5 items-center">
                   <div>
@@ -326,7 +326,7 @@ export default function Checkout() {
                   <input type="radio" name="" id="" />
                   <span>Paypal</span>
                 </div>
-                <Image src={Paypal} alt="Paypal" />
+                <Image src={"/details page/Paypal.png"} alt="Paypal" />
               </div>
 
               <div className="p-4 w-full bg-gray-100 rounded-lg flex justify-between items-center">
@@ -334,7 +334,7 @@ export default function Checkout() {
                   <input type="radio" name="" id="" />
                   <span>Bitcoin</span>
                 </div>
-                <Image src={Bitcoin} alt="Bitcoin" />
+                <Image src={"/details page/Bitcoin.png"} alt="Bitcoin" />
               </div>
             </div>
           </div>
@@ -343,30 +343,34 @@ export default function Checkout() {
               <div>
                 <h1 className="text-xl font-bold">Confirmation</h1>
                 <p className="flex justify-between text-gray-500">
-                We are getting to the end. Just few clicks and your rental is ready!{" "}
-                  <span className="text-gray-500">Step 4 of 4</span>
+                  We are getting to the end. Just few clicks and your rental is
+                  ready! <span className="text-gray-500">Step 4 of 4</span>
                 </p>
               </div>
               <div className="p-4 w-full bg-gray-100 rounded-lg flex justify-between items-center">
-                
                 <div className="flex gap-2 items-center">
                   <input type="checkbox" name="" id="" />
-                  <span className="text-sm">I agree with sending an Marketing and newsletter emails. No spam, promissed!</span>
+                  <span className="text-sm">
+                    I agree with sending an Marketing and newsletter emails. No
+                    spam, promissed!
+                  </span>
                 </div>
               </div>
 
               <div className="p-4 w-full bg-gray-100 rounded-lg flex justify-between items-center">
                 <div className="flex gap-2 items-center">
                   <input type="checkbox" name="" id="" />
-                  <span className="text-sm">I agree with our terms and conditions and privacy policy.</span>
+                  <span className="text-sm">
+                    I agree with our terms and conditions and privacy policy.
+                  </span>
                 </div>
               </div>
               <button
-                      type="button"
-                      className="w-fit px-5 py-2.5 rounded-lg border-none text-white text-base tracking-wider border outline-none bg-blue-700 hover:bg-blue-800 active:bg-blue-700 relative z-10"
-                    >
-                      Rent Now
-                    </button>
+                type="button"
+                className="w-fit px-5 py-2.5 rounded-lg border-none text-white text-base tracking-wider border outline-none bg-blue-700 hover:bg-blue-800 active:bg-blue-700 relative z-10"
+              >
+                Rent Now
+              </button>
             </div>
           </div>
         </div>

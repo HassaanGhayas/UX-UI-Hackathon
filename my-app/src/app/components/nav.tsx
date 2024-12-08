@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import pfp from "../../../public/images/avatars/Profill.png"
 import Link from "next/link";
 
 export default function Navbar() {
@@ -8,7 +7,9 @@ export default function Navbar() {
     <div>
       <nav className="flex w-full max-w-screen-xl m-auto justify-between p-5">
         <div className="flex items-center gap-16">
-          <span className="text-3xl font-semibold text-blue-600"><Link href="/">MORENT</Link></span>
+          <span className="text-3xl font-semibold text-blue-600">
+            <Link href="/">MORENT</Link>
+          </span>
           <div className="hidden items-center max-w-xl w-full px-5 py-2 gap-3 rounded-full border-2 border-gray-400 bg-white md:flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +71,12 @@ export default function Navbar() {
             </svg>
           </span>
           <Link href="/dashboard">
-          <Image src={pfp} width={45} alt="" />
+            <Image
+              src={"/avatars/ProfileOne.png"}
+              width={45}
+              height={45}
+              alt=""
+            />
           </Link>
         </div>
       </nav>
