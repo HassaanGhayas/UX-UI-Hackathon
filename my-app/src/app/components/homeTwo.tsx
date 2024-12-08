@@ -1,6 +1,6 @@
 import React from "react";
 import Car1 from "../../../public/images/cards/car.png";
-import Car2 from "../../../public/images/cards/Car-1.png";
+import Car2 from "../../../public/images/cards/Car1.png";
 import Car3 from "../../../public/images/cards/Car-3.png";
 import Car4 from "../../../public/images/cards/Car-4.png";
 import Car5 from "../../../public/images/cards/Car-5.png";
