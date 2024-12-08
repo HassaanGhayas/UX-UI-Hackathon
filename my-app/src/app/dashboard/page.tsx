@@ -399,7 +399,7 @@ export default function Dashboard() {
               <span className="font-bold">Details Rental</span>
               <div>
                 <Image
-                  src={"/dashboard/dashboard (1).png"}
+                  src={"/dashboard/dashboard (2).png"}
                   alt=""
                   height={300}
                   width={300}
@@ -408,7 +408,7 @@ export default function Dashboard() {
               <div className="flex gap-2">
                 {" "}
                 <Image
-                  src={"images/details page/View 1.png"}
+                  src={"/details page/Products (1).png"}
                   alt=""
                   width={150}
                   height={150}
@@ -564,7 +564,7 @@ export default function Dashboard() {
               <span className="font-bold">Top 5 Car Rental</span>
               <div className="flex gap-5">
                 <Image
-                  src={"/dashboard/dashboard (2).png"}
+                  src={"/dashboard/dashboard (1).png"}
                   alt=""
                   height={300}
                   width={300}
