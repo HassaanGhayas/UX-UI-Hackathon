@@ -1,20 +1,11 @@
 import React from "react";
-import Car1 from "../../../public/images/cards/car.png";
-import Car2 from "../../../public/images/cards/Car1.png";
-import Car3 from "../../../public/images/cards/Car-3.png";
-import Car4 from "../../../public/images/cards/Car-4.png";
-import Car5 from "../../../public/images/cards/Car-5.png";
-import Car6 from "../../../public/images/cards/Car-6.png";
-import Car7 from "../../../public/images/cards/Car-7.png";
-import Car8 from "../../../public/images/cards/Car-8.png";
-import Car9 from "../../../public/images/cards/Car-9.png";
 import Image from "next/image";
 
 const cardData = [
   {
     carName: "Koenigsegg",
     carType: "Sport",
-    carImg: Car1,
+    carImg: "/images/cards/car.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -22,7 +13,7 @@ const cardData = [
   {
     carName: "Nissan GT - R",
     carType: "Sport",
-    carImg: Car2,
+    carImg: "/images/cards/Car1.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "4",
     carPrice: "$99.9",
@@ -30,7 +21,7 @@ const cardData = [
   {
     carName: "Cr - V",
     carType: "Sport",
-    carImg: Car3,
+    carImg: "/images/cards/Car-3.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -38,7 +29,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car4,
+    carImg: "/images/cards/Car-4.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -46,7 +37,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car5,
+    carImg: "/images/cards/Car-5.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -54,7 +45,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car6,
+    carImg: "/images/cards/Car-6.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -62,7 +53,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car7,
+    carImg: "/images/cards/Car-7.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -70,7 +61,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car8,
+    carImg: "/images/cards/Car-8.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -78,7 +69,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car9,
+    carImg: "/images/cards/Car-9.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -86,7 +77,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car2,
+    carImg: "/images/cards/Car1.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -94,7 +85,7 @@ const cardData = [
   {
     carName: "All New Terios",
     carType: "Sport",
-    carImg: Car5,
+    carImg: "/images/cards/Car-5.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -102,12 +93,12 @@ const cardData = [
   {
     carName: "Nissan GTR",
     carType: "Sport",
-    carImg: Car1,
+    carImg: "/images/cards/car.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
   },
-];
+]
 
 function HomeSectionTwo() {
   return (
@@ -120,7 +111,10 @@ function HomeSectionTwo() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
           {cardData.map((card, index) => {
             return (
-              <div key={index} className="min-h-[300px] flex flex-col justify-between bg-white p-5 rounded-xl">
+              <div
+                key={index}
+                className="min-h-[300px] flex flex-col justify-between bg-white p-5 rounded-xl"
+              >
                 <div>
                   <div className="flex justify-between">
                     <span className="text-xl font-semibold">
@@ -142,6 +136,8 @@ function HomeSectionTwo() {
                   <div className="flex justify-center">
                     <Image
                       src={card.carImg}
+                      height={300}
+                      width={300}
                       alt=""
                       className="object-contain"
                     />

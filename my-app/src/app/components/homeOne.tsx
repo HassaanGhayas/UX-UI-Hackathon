@@ -1,15 +1,11 @@
 import React from "react";
-import Car1 from "../../../public/images/cards/car.png";
-import Car2 from "../../../public/images/cards/Car1.png";
-import Car3 from "../../../public/images/cards/Car-3.png";
-import Car4 from "../../../public/images/cards/Car-4.png";
 import Image from "next/image";
 
 const cardData = [
   {
     carName: "Koenigsegg",
     carType: "Sport",
-    carImg: Car1,
+    carImg: "/images/cards/car.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -17,7 +13,7 @@ const cardData = [
   {
     carName: "Nissan GT - R",
     carType: "Sport",
-    carImg: Car2,
+    carImg: "/images/cards/Car1.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "4",
     carPrice: "$99.9",
@@ -25,7 +21,7 @@ const cardData = [
   {
     carName: "Rolls - Royce",
     carType: "Sport",
-    carImg: Car3,
+    carImg: "/images/cards/Car-3.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -33,7 +29,7 @@ const cardData = [
   {
     carName: "Rolls - Royce",
     carType: "Sport",
-    carImg: Car4,
+    carImg: "/images/cards/Car-4.png", // Update to URL path
     carFuel: "90",
     pplCapacity: "2",
     carPrice: "$99.9",
@@ -51,7 +47,10 @@ function HomeSectionOne() {
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
           {cardData.map((card, index) => {
             return (
-              <div key={index} className="min-h-[300px] flex flex-col justify-between bg-white p-5 gap-12 rounded-xl">
+              <div
+                key={index}
+                className="min-h-[300px] flex flex-col justify-between bg-white p-5 gap-12 rounded-xl"
+              >
                 <div>
                   <div className="flex justify-between">
                     <span className="text-xl font-semibold">
@@ -71,7 +70,7 @@ function HomeSectionOne() {
                 </div>
 
                 <div className="flex justify-center">
-                  <Image src={card.carImg} alt="" />
+                  <Image src={card.carImg} width={300} height={300} alt="" />
                 </div>
                 <div className="flex flex-col gap-5">
                   <div className="flex justify-between text-sm">
