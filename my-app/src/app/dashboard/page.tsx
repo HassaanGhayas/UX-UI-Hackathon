@@ -4,7 +4,7 @@ import map from "../../../public/images/dashboard/Maps.png";
 import chart from "../../../public/images/dashboard/Chart.png";
 import billimg from "../../../public/images/details page/View 1.png";
 import img1 from "../../../public/images/cards/car.png";
-import img2 from "../../../public/images/cards/car-1.png";
+import img2 from "../../../public/images/cards/Car-1.png";
 import img3 from "../../../public/images/cards/Car-2.png";
 import img4 from "../../../public/images/cards/Car-3.png";
 import Link from "next/link";
