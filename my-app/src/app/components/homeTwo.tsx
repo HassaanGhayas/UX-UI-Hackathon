@@ -100,7 +100,11 @@ const cardData = [
   },
 ]
 
-function HomeSectionTwo(props:any) {
+interface HomeSectionTwoProps {
+  title?: string;
+}
+
+function HomeSectionTwo(props:HomeSectionTwoProps) {
   return (
     <div className="bg-gray-100 py-10 px-5">
       <div className="flex flex-col w-full max-w-screen-xl m-auto gap-10">

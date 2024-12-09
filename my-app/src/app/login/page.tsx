@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Login() {
   return (
@@ -114,7 +115,7 @@ export default function Login() {
                 </div>
 
                 <p className="text-sm !mt-8 text-center text-gray-800">
-                  Don't have an account{" "}
+                  Don&apos;t have an account{" "}
                   <Link
                     href="/signup"
                     className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
@@ -125,7 +126,7 @@ export default function Login() {
               </form>
             </div>
             <div className="lg:h-[400px] md:h-[300px] max-md:mt-8">
-              <img
+              <Image
                 src="https://readymadeui.com/login-image.webp"
                 className="w-full h-full max-md:w-4/5 mx-auto block object-cover"
                 alt="Dining Experience"
