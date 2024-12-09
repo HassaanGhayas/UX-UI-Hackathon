@@ -327,7 +327,7 @@ export default function Checkout() {
                   <input type="radio" name="" id="" />
                   <span>Paypal</span>
                 </div>
-                <Image src={"/Payment Methods/Paypal.png"} alt="Paypal" height={100} width={100} />
+                <Image src={"/Payment Methods/PayPal.png"} alt="Paypal" height={100} width={100} />
               </div>
 
               <div className="p-4 w-full bg-gray-100 rounded-lg flex justify-between items-center">
