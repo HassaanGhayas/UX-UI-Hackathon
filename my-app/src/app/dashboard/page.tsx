@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function Dashboard() {
   return (
-    <div>
-      <div className="relative bg-[#f7f6f9] h-full min-h-screen">
-        <div className="flex items-start">
-          <nav id="sidebar" className="lg:min-w-[250px] w-max max-lg:min-w-8">
+    <div className="bg-gray-100">
+      <div className="relative bg-[#f7f6f9] h-full min-h-screen max-w-screen-xl m-auto">
+        <div className="flex">
+          <nav id="sidebar" className="lg:min-w-[250px] w-max max-lg:min-w-8 lg:block hidden">
             <div
               id="sidebar-collapse-menu"
               className="bg-white shadow-lg h-screen fixed top-0 left-0 overflow-auto z-[99] lg:min-w-[250px] lg:w-max max-lg:w-0 max-lg:invisible transition-all duration-500"
@@ -394,8 +394,8 @@ export default function Dashboard() {
             </svg>
           </button>
 
-          <div className="w-full grid md:grid-cols-2 place-items-center p-2 m-5 justify-between gap-5">
-            <div className="p-5 bg-white flex flex-col gap-5 w-full">
+          <div className="w-full grid md:grid-cols-2 place-items-center m-5 justify-center gap-5">
+            <div className="p-5 bg-white flex flex-col gap-5 w-full rounded-lg">
               <span className="font-bold">Details Rental</span>
               <div>
                 <Image
@@ -403,6 +403,7 @@ export default function Dashboard() {
                   alt=""
                   height={300}
                   width={300}
+                  className="w-full"
                 />
               </div>
               <div className="flex gap-2">
@@ -410,8 +411,9 @@ export default function Dashboard() {
                 <Image
                   src={"/details page/Products (1).png"}
                   alt=""
-                  width={150}
-                  height={150}
+                  width={100}
+                  height={100}
+                  className="object-contain"
                 />{" "}
                 <div className="flex flex-col gap-2 w-full">
                   {" "}
@@ -548,7 +550,7 @@ export default function Dashboard() {
                   </div>
                   <div className="flex justify-between items-center mt-10">
                     {" "}
-                    <div className="w-[200px] flex flex-col">
+                    <div className="flex flex-col">
                       {" "}
                       <span className="font-bold">Total Rented Price</span>{" "}
                       <span className="text-sm text-gray-500">
@@ -560,16 +562,17 @@ export default function Dashboard() {
                 </div>
               </div>
             </div>
-            <div className="p-5 bg-white flex flex-col gap-5 relative justify-between w-full h-full">
+            <div className="p-5 bg-white flex flex-col gap-5 relative justify-between w-full h-full rounded-lg">
               <span className="font-bold">Top 5 Car Rental</span>
               <div className="flex gap-5">
                 <Image
                   src={"/dashboard/dashboard (1).png"}
                   alt=""
-                  height={300}
-                  width={300}
+                  height={200}
+                  width={200}
+                  className="w-2/4"
                 />
-                <div className="flex flex-col justify-between w-full">
+                <div className="flex flex-col justify-between w-full text-[12px]">
                   <div className="flex justify-between w-full ">
                     <div className="inline-flex items-center gap-2">
                       <div className="h-2 w-2 bg-blue-900 rounded-full"></div>
@@ -612,13 +615,14 @@ export default function Dashboard() {
                 <Image
                   src={"/cards/Car (1).png"}
                   alt=""
-                  width={150}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />{" "}
                 <div className="flex flex-col gap-2 w-full">
                   {" "}
                   <div className="flex w-full justify-between">
-                    <span className="sm:text-xl text-lg font-bold">
+                    <span className="sm:text-xl text-base font-bold">
                       Nissan GT - R
                     </span>{" "}
                     <span>#9761</span>
@@ -631,7 +635,8 @@ export default function Dashboard() {
                 <Image
                   src={"/cards/Car (2).png"}
                   alt=""
-                  width={150}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />{" "}
                 <div className="flex flex-col gap-2 w-full">
@@ -650,7 +655,8 @@ export default function Dashboard() {
                 <Image
                   src={"/cards/Car (3).png"}
                   alt=""
-                  width={150}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />{" "}
                 <div className="flex flex-col gap-2 w-full">
@@ -669,7 +675,8 @@ export default function Dashboard() {
                 <Image
                   src={"/cards/Car (4).png"}
                   alt=""
-                  width={150}
+                  width={100}
+                  height={100}
                   className="object-contain"
                 />{" "}
                 <div className="flex flex-col gap-2 w-full">

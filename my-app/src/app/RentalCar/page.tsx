@@ -7,7 +7,8 @@ export default function ProductDetails() {
     <div className="flex bg-gray-100">
       <Sidebar />
       <div className="w-full">
-        <div className="flex w-full relative justify-between max-w-screen-xl gap-5 lg:flex-row flex-col p-5">
+        <div className="p-5">
+        <div className="flex w-full relative justify-between max-w-screen-xl gap-5 lg:flex-row flex-col">
           <div className="px-5 sm:px-10 py-5 flex flex-col gap-2 bg-white rounded-xl w-full">
             <div className="flex font-semibold gap-2">
               <svg
@@ -141,6 +142,7 @@ export default function ProductDetails() {
               </div>
             </div>
           </div>
+        </div>
         </div>
         <HomeSectionTwo />
       </div>

@@ -100,12 +100,12 @@ const cardData = [
   },
 ]
 
-function HomeSectionTwo() {
+function HomeSectionTwo(props:any) {
   return (
-    <div className="bg-gray-100">
-      <div className="flex flex-col w-full max-w-screen-xl m-auto p-8 gap-10">
+    <div className="bg-gray-100 py-10 px-5">
+      <div className="flex flex-col w-full max-w-screen-xl m-auto gap-10">
         <div className="sm:text-xl gap-2 flex justify-between">
-          <span className="text-gray-500">Recommendation Cars</span>
+          <span className="text-gray-500">{props.title? props.title: "Recommendation Cars"}</span>
           <span className="text-blue-500 ml-auto">View all</span>
         </div>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">

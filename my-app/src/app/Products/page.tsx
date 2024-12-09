@@ -24,7 +24,8 @@ export default function ProductDetails() {
   return (
     <div className="flex bg-gray-100 max-w-screen-xl m-auto">
       <Sidebar />
-      <div className="w-full flex flex-col gap-10 p-5">
+      <div className="w-full flex flex-col gap-10">
+        <div className="p-5 w-full flex flex-col gap-10">
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10">
           <div className="flex flex-col gap-5">
             <div>
@@ -211,7 +212,8 @@ export default function ProductDetails() {
             );
           })}
         </div>
-        <HomeSectionTwo />
+        </div>
+        <HomeSectionTwo title="Recent Cars" />
       </div>
     </div>
   );

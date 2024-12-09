@@ -5,12 +5,11 @@ import HomeSectionTwo from "./components/homeTwo";
 
 export default function Home() {
   return (
-    <>
-    
+    <div>
     <HomeHeroSection/>
     <HomeSectionOne/>
     <HomeSectionTwo/>
 
-    </>
+    </div>
   );
 }

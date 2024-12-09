@@ -38,8 +38,8 @@ const cardData = [
 
 function HomeSectionOne() {
   return (
-    <div className="bg-gray-100">
-      <div className="flex flex-col w-full max-w-screen-xl m-auto p-8 gap-10">
+    <div className="bg-gray-100 p-5">
+      <div className="flex flex-col w-full max-w-screen-xl m-auto gap-10">
         <div className="sm:text-xl flex justify-between">
           <span className="text-gray-500">Popular Car</span>
           <span className="text-blue-500 ml-auto">View all</span>

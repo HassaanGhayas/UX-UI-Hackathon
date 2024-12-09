@@ -21,7 +21,7 @@ export default function HomeHeroSection() {
   ];
 
   return (
-    <section className="bg-gray-100 py-10 md:px-10 px-4 flex flex-col gap-10 items-center">
+    <section className="bg-gray-100 py-10 px-5 flex flex-col gap-10 items-center">
       <div className="md:hidden flex max-w-md w-full px-5 py-2 gap-3 rounded-full border-2 border-gray-400 bg-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"

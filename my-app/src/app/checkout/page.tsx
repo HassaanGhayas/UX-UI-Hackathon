@@ -23,6 +23,7 @@ export default function Checkout() {
                 src={"/details page/Products (1).png"}
                 alt=""
                 width={100}
+                height={100}
               />{" "}
               <div className="flex flex-col gap-2">
                 {" "}
@@ -280,7 +281,7 @@ export default function Checkout() {
                     </svg>
                     <span>Credit Card</span>
                   </div>
-                  <Image src={"/details page/Visa.png"} alt="Visa" />
+                  <Image src={"/Payment Methods/Visa.png"} alt="Visa" height={100} width={100} />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-5 items-center">
                   <div>
@@ -326,7 +327,7 @@ export default function Checkout() {
                   <input type="radio" name="" id="" />
                   <span>Paypal</span>
                 </div>
-                <Image src={"/details page/Paypal.png"} alt="Paypal" />
+                <Image src={"/Payment Methods/Paypal.png"} alt="Paypal" height={100} width={100} />
               </div>
 
               <div className="p-4 w-full bg-gray-100 rounded-lg flex justify-between items-center">
@@ -334,7 +335,7 @@ export default function Checkout() {
                   <input type="radio" name="" id="" />
                   <span>Bitcoin</span>
                 </div>
-                <Image src={"/details page/Bitcoin.png"} alt="Bitcoin" />
+                <Image src={"/Payment Methods/Bitcoin.png"} alt="Bitcoin" height={100} width={100} />
               </div>
             </div>
           </div>
